@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillBridge - Contact Us</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts & Custom Stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-header {
+            background-color: #f8fafc;
+            border-bottom: 1px solid #e2e8f0;
+            padding: 4rem 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white py-3 border-bottom">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2 text-dark text-decoration-none fw-bold" href="index.html">
+                <div class="bg-dark text-white rounded p-1 d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">
+                    <span style="font-size: 14px;">⚡</span>
+                </div>
+                SkillBridge
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav gap-4">
+                    <li class="nav-item"><a class="nav-link text-muted" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-muted" href="opportunities.html">Opportunities</a></li>
+                    <li class="nav-item"><a class="nav-link text-muted" href="skills-guide.html">Skills Guide</a></li>
+                    <li class="nav-item"><a class="nav-link text-muted" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-semibold text-dark" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="d-none d-lg-block">
+                <a href="opportunities.html" class="btn px-4 rounded-pill fw-semibold" style="background-color: #5eead4; color: #111827;">Explore Opportunities →</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Header -->
+    <header class="contact-header">
+        <div class="container">
+            <p class="text-uppercase text-muted fw-semibold small mb-2">— CONTACT US</p>
+            <h1 class="fw-bold display-4 mb-3">Start a conversation with our team.</h1>
+            <p class="text-muted lead mb-0">Share a question, idea, or opportunity suggestion. We value clear, thoughtful feedback.</p>
+        </div>
+    </header>
+
+    <!-- Main Contact Form Section -->
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="p-4 p-md-5 bg-light rounded-4 border shadow-sm">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label fw-semibold">Your Name</label>
+                            <input type="text" class="form-control rounded-3" id="name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label fw-semibold">Email Address</label>
+                            <input type="email" class="form-control rounded-3" id="email" placeholder="name@example.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label fw-semibold">Subject</label>
+                            <input type="text" class="form-control rounded-3" id="subject" placeholder="What is this regarding?" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="form-label fw-semibold">Message</label>
+                            <textarea class="form-control rounded-3" id="message" rows="5" placeholder="Write your message or feedback here..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark w-100 py-3 rounded-pill fw-semibold" style="background-color: #0f172a;">Send Message →</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5 mt-5">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <div class="mb-3 mb-md-0">
+                <h5 class="fw-bold mb-1">SkillBridge</h5>
+                <p class="text-muted small mb-0">Discover Opportunities. Understand Skills.</p>
+            </div>
+            <div class="d-flex gap-4 text-muted small">
+                <a href="index.html" class="text-white text-decoration-none">Home</a>
+                <a href="opportunities.html" class="text-white text-decoration-none">Opportunities</a>
+                <a href="skills-guide.html" class="text-white text-decoration-none">Skills Guide</a>
+                <a href="about.html" class="text-white text-decoration-none">About</a>
+                <a href="contact.html" class="text-white text-decoration-none">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

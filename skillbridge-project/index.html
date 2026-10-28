@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillBridge - Discover Opportunities, Understand Skills</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts & Custom Stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white py-3 border-bottom">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2 text-dark text-decoration-none fw-bold" href="index.html">
+                <div class="bg-dark text-white rounded p-1 d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">
+                    <span style="font-size: 14px;">⚡</span>
+                </div>
+                SkillBridge
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav gap-4">
+                    <li class="nav-item"><a class="nav-link active fw-semibold text-dark" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-muted" href="opportunities.html">Opportunities</a></li>
+                    <li class="nav-item"><a class="nav-link text-muted" href="skills-guide.html">Skills Guide</a></li>
+                    <li class="nav-item"><a class="nav-link text-muted" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-muted" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="d-none d-lg-block">
+                <a href="opportunities.html" class="btn btn-teal px-4 rounded-pill fw-semibold" style="background-color: #5eead4; color: #111827;">Explore Opportunities →</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="container py-5 my-4">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <p class="text-uppercase text-muted fw-semibold small mb-3" style="letter-spacing: 0.05em;">— YOUR NEXT STEP STARTS HERE</p>
+                <h1 class="display-4 fw-bold mb-4" style="letter-spacing: -0.03em; line-height: 1.1;">
+                    Discover Opportunities.<br>
+                    <span style="color: #0d9488;">Understand Skills.</span>
+                </h1>
+                <p class="text-muted lead mb-4" style="font-size: 1.1rem;">
+                    Explore virtual training opportunities, discover in-demand skills, and find a clearer path toward your future career.
+                </p>
+                <div class="d-flex gap-3 align-items-center">
+                    <a href="opportunities.html" class="btn btn-dark rounded-pill px-4 py-3 fw-medium text-decoration-none" style="background-color: #0f172a;">Explore Opportunities →</a>
+                    <a href="skills-guide.html" class="btn btn-light rounded-pill px-4 py-3 text-dark fw-medium border text-decoration-none">Explore Skills Guide</a>
+                </div>
+                <div class="mt-4 text-muted small d-flex align-items-center gap-2">
+                    <span class="text-success fw-bold">✓</span> Built for curious students ready to grow.
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <!-- Figma Preview Card with working button/link -->
+                <div class="bg-light p-4 rounded-5 border position-relative shadow-sm">
+                    <div class="bg-white p-4 rounded-4 shadow-sm border">
+                        <div class="text-uppercase text-muted small fw-bold mb-2" style="font-size: 0.7rem; letter-spacing: 0.05em;">Featured Opportunity</div>
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="bg-dark text-white rounded p-2 fw-bold d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">M</div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Microsoft</h6>
+                                <small class="text-muted">Technology · Virtual</small>
+                            </div>
+                        </div>
+                        <h4 class="fw-bold mb-3">Frontend Development Intern</h4>
+                        <div class="d-flex gap-4 text-muted small mb-4">
+                            <span>⏱ 10 weeks</span>
+                            <span>📅 Jun 02</span>
+                        </div>
+                        <div class="progress mb-3" style="height: 6px;">
+                            <div class="progress-bar" style="width: 82%; background-color: #0d9488;"></div>
+                        </div>
+                        <a href="opportunities.html" class="btn btn-dark w-100 rounded-pill py-2 text-decoration-none text-white d-block text-center" style="background-color: #0f172a;">View opportunity →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search & Dynamic Opportunities Section -->
+    <section class="container my-5 pt-4 border-top">
+        <div class="row mb-4">
+            <div class="col-lg-8">
+                <p class="text-uppercase text-muted fw-semibold small mb-1">— CURATED FOR STUDENTS</p>
+                <h2 class="fw-bold display-6">Find an opportunity that fits your direction.</h2>
+            </div>
+        </div>
+
+        <!-- Search Form -->

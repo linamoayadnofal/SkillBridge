@@ -1,0 +1,47 @@
+:root {
+    --bg-main: #FBF9F5;
+    --primary-color: #E05A47;
+    --dark-green: #1A332E;
+    --text-dark: #1E1E1E;
+    --text-muted: #666666;
+    --border-color: #E2E2E2;
+    --font-main: 'Plus Jakarta Sans', sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--font-main); background-color: var(--bg-main); color: var(--text-dark); line-height: 1.5; }
+
+/* Navbar */
+.navbar { max-width: 1200px; margin: 0 auto; padding: 20px 24px; display: flex; align-items: center; justify-content: space-between; }
+.logo-container { display: flex; align-items: center; gap: 8px; text-decoration: none; color: inherit; }
+.logo-icon { width: 32px; height: 32px; background-color: var(--primary-color); color: white; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: bold; }
+.nav-links { display: flex; gap: 32px; list-style: none; }
+.nav-links a { text-decoration: none; color: var(--text-muted); font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
+.nav-links a.active, .nav-links a:hover { color: var(--primary-color); }
+
+/* Hero Section */
+.hero-section { max-width: 1200px; margin: 40px auto; padding: 0 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+.hero-title { font-size: 3.2rem; line-height: 1.1; font-weight: 700; margin-bottom: 16px; }
+.highlight { color: var(--primary-color); }
+.hero-description { color: var(--text-muted); font-size: 1.1rem; margin-bottom: 24px; }
+
+/* Buttons & Pills */
+.btn { padding: 10px 20px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; cursor: pointer; border: none; text-decoration: none; display: inline-block; transition: all 0.2s; }
+.btn-primary { background: var(--primary-color); color: white; }
+.btn-dark { background: var(--dark-green); color: white; border-radius: 12px; }
+
+.filter-pills { display: flex; gap: 8px; margin-bottom: 32px; flex-wrap: wrap; }
+.pill { padding: 8px 16px; border-radius: 20px; border: 1px solid var(--border-color); background: white; font-size: 0.8rem; font-weight: 600; cursor: pointer; }
+.pill.active { background: var(--dark-green); color: white; border-color: var(--dark-green); }
+
+/* Cards Grid */
+.cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px; margin-bottom: 60px; }
+.opportunity-card { background: white; border: 1px solid var(--border-color); border-radius: 16px; padding: 24px; display: flex; flex-direction: column; justify-content: space-between; }
+.card-footer { margin-top: 24px; padding-top: 16px; border-top: 1px solid #F3F4F6; display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--text-muted); }
+.apply-link { color: var(--primary-color); font-weight: 600; text-decoration: none; }
+
+footer { background: var(--dark-green); color: white; padding: 40px 24px; margin-top: 60px; }
+footer a { color: #ccc; text-decoration: none; }
+footer a:hover { color: white; }
+
+@media (max-width: 768px) { .hero-section { grid-template-columns: 1fr; } .nav-links { display: none; } }
