@@ -1,98 +1,246 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SkillBridge - Discover Opportunities, Understand Skills</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Google Fonts & Custom Stylesheet -->
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fafafa;
+            color: #111827;
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+        }
+        .hero-section {
+            background: linear-gradient(180deg, #ffffff 0%, #f3f4f6 100%);
+            border-bottom: 1px solid #eaecf0;
+            padding: 4rem 0;
+        }
+        .btn-teal {
+            background-color: #5eead4;
+            color: #111827;
+            transition: all 0.2s ease;
+            font-weight: 600;
+            border-radius: 50rem;
+            padding: 0.5rem 1.25rem;
+            border: none;
+        }
+        .btn-teal:hover {
+            background-color: #2dd4bf;
+            color: #111827;
+        }
+        .filter-chip {
+            background-color: #ffffff;
+            border: 1px solid #e5e7eb;
+            color: #4b5563;
+            border-radius: 50rem;
+            padding: 0.4rem 1rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            text-decoration: none;
+        }
+        .filter-chip:hover {
+            background-color: #0f172a;
+            color: #ffffff;
+            border-color: #0f172a;
+        }
+        /* منع أي تداخل نهائياً عبر Flexbox صريح */
+        .hero-container-flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+        .hero-left-box {
+            flex: 1;
+            min-width: 300px;
+        }
+        .hero-right-box {
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            justify-content: flex-end;
+        }
+        @media (max-width: 991px) {
+            .hero-right-box {
+                justify-content: center;
+            }
+        }
+    </style>
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-white py-3 border-bottom">
+    <nav class="navbar navbar-expand-lg bg-white py-3 border-bottom sticky-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center gap-2 text-dark text-decoration-none fw-bold" href="index.html">
-                <div class="bg-dark text-white rounded p-1 d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">
-                    <span style="font-size: 14px;">⚡</span>
+                <div class="bg-dark text-white rounded-3 p-1 d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;">
+                    <i class="bi bi-lightning-charge-fill text-warning"></i>
                 </div>
-                SkillBridge
+                <span class="fs-4">SkillBridge</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav gap-4">
                     <li class="nav-item"><a class="nav-link active fw-semibold text-dark" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-muted" href="opportunities.html">Opportunities</a></li>
-                    <li class="nav-item"><a class="nav-link text-muted" href="skills-guide.html">Skills Guide</a></li>
-                    <li class="nav-item"><a class="nav-link text-muted" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link text-muted" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="opportunities.html">Opportunities</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="skills-guide.html">Skills Guide</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="d-none d-lg-block">
-                <a href="opportunities.html" class="btn btn-teal px-4 rounded-pill fw-semibold" style="background-color: #5eead4; color: #111827;">Explore Opportunities →</a>
+                <a href="opportunities.html" class="btn btn-teal shadow-sm text-decoration-none">Explore Opportunities <i class="bi bi-arrow-right ms-1"></i></a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="container py-5 my-4">
-        <div class="row align-items-center">
-            <div class="col-lg-6 mb-4 mb-lg-0">
-                <p class="text-uppercase text-muted fw-semibold small mb-3" style="letter-spacing: 0.05em;">— YOUR NEXT STEP STARTS HERE</p>
-                <h1 class="display-4 fw-bold mb-4" style="letter-spacing: -0.03em; line-height: 1.1;">
-                    Discover Opportunities.<br>
-                    <span style="color: #0d9488;">Understand Skills.</span>
-                </h1>
-                <p class="text-muted lead mb-4" style="font-size: 1.1rem;">
-                    Explore virtual training opportunities, discover in-demand skills, and find a clearer path toward your future career.
-                </p>
-                <div class="d-flex gap-3 align-items-center">
-                    <a href="opportunities.html" class="btn btn-dark rounded-pill px-4 py-3 fw-medium text-decoration-none" style="background-color: #0f172a;">Explore Opportunities →</a>
-                    <a href="skills-guide.html" class="btn btn-light rounded-pill px-4 py-3 text-dark fw-medium border text-decoration-none">Explore Skills Guide</a>
-                </div>
-                <div class="mt-4 text-muted small d-flex align-items-center gap-2">
-                    <span class="text-success fw-bold">✓</span> Built for curious students ready to grow.
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <!-- Figma Preview Card with working button/link -->
-                <div class="bg-light p-4 rounded-5 border position-relative shadow-sm">
-                    <div class="bg-white p-4 rounded-4 shadow-sm border">
-                        <div class="text-uppercase text-muted small fw-bold mb-2" style="font-size: 0.7rem; letter-spacing: 0.05em;">Featured Opportunity</div>
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                            <div class="bg-dark text-white rounded p-2 fw-bold d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">M</div>
-                            <div>
-                                <h6 class="mb-0 fw-bold">Microsoft</h6>
-                                <small class="text-muted">Technology · Virtual</small>
-                            </div>
-                        </div>
-                        <h4 class="fw-bold mb-3">Frontend Development Intern</h4>
-                        <div class="d-flex gap-4 text-muted small mb-4">
-                            <span>⏱ 10 weeks</span>
-                            <span>📅 Jun 02</span>
-                        </div>
-                        <div class="progress mb-3" style="height: 6px;">
-                            <div class="progress-bar" style="width: 82%; background-color: #0d9488;"></div>
-                        </div>
-                        <a href="opportunities.html" class="btn btn-dark w-100 rounded-pill py-2 text-decoration-none text-white d-block text-center" style="background-color: #0f172a;">View opportunity →</a>
+    <!-- Hero Section مع استخدام Flexbox نقي لمنع التداخل تماماً -->
+    <header class="hero-section">
+        <div class="container">
+            <div class="hero-container-flex">
+                
+                <!-- النص على اليسار -->
+                <div class="hero-left-box">
+                    <div class="d-inline-flex align-items-center gap-2 px-3 py-1 rounded-pill bg-white border border-light-subtle shadow-sm mb-3">
+                        <span class="badge rounded-pill text-dark" style="background-color: #5eead4;">NEW</span>
+                        <span class="small text-muted fw-medium">YOUR NEXT STEP STARTS HERE</span>
+                    </div>
+                    <h1 class="display-4 fw-bold mb-4" style="letter-spacing: -0.03em; line-height: 1.15;">
+                        Discover Opportunities.<br>
+                        <span style="color: #0d9488;">Understand Skills.</span>
+                    </h1>
+                    <p class="text-secondary lead mb-4" style="font-size: 1.15rem;">
+                        Explore virtual training opportunities, discover in-demand skills, and find a clearer path toward your future career.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 align-items-center">
+                        <a href="opportunities.html" class="btn btn-dark rounded-pill px-4 py-3 fw-medium text-white text-decoration-none shadow-sm" style="background-color: #0f172a;">
+                            Explore Opportunities <i class="bi bi-arrow-right ms-1"></i>
+                        </a>
+                        <a href="skills-guide.html" class="btn btn-white bg-white rounded-pill px-4 py-3 text-dark fw-medium border text-decoration-none shadow-sm">
+                            Explore Skills Guide
+                        </a>
+                    </div>
+                    <div class="mt-4 text-secondary small d-flex align-items-center gap-2">
+                        <i class="bi bi-check-circle-fill text-success fs-6"></i> Built for curious students ready to grow.
                     </div>
                 </div>
+
+                <!-- البطاقة على اليمين بعيداً عن النص تماماً -->
+                <div class="hero-right-box">
+                    <div class="p-3 bg-white rounded-5 border shadow-sm w-100" style="max-width: 440px;">
+                        <div class="p-4 rounded-4 border bg-white">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-light text-muted border text-uppercase" style="font-size: 0.7rem; letter-spacing: 0.05em;">Featured Opportunity</span>
+                                <span class="badge text-success border border-success-subtle rounded-pill bg-success-subtle">Verified</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="bg-dark text-white rounded-3 p-2 fw-bold d-flex align-items-center justify-content-center shadow-sm" style="width: 48px; height: 48px;">
+                                    <i class="bi bi-microsoft fs-5"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0 fw-bold">Microsoft</h5>
+                                    <small class="text-muted"><i class="bi bi-laptop me-1"></i>Technology · Virtual</small>
+                                </div>
+                            </div>
+                            <h4 class="fw-bold mb-3">Frontend Development Intern</h4>
+                            <div class="d-flex gap-4 text-muted small mb-4">
+                                <span><i class="bi bi-clock me-1 text-primary"></i> 10 weeks</span>
+                                <span><i class="bi bi-calendar-event me-1 text-danger"></i> Jun 02</span>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between small text-muted mb-1">
+                                    <span>Skills match</span>
+                                    <span class="fw-bold text-dark">82%</span>
+                                </div>
+                                <div class="progress" style="height: 8px;">
+                                    <div class="progress-bar rounded-pill" style="width: 82%; background-color: #0d9488;"></div>
+                                </div>
+                            </div>
+                            <a href="opportunities.html" class="btn btn-dark w-100 rounded-pill py-2 text-decoration-none text-white d-block text-center mt-4 fw-medium" style="background-color: #0f172a;">
+                                View opportunity <i class="bi bi-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </header>
 
-    <!-- Search & Dynamic Opportunities Section -->
-    <section class="container my-5 pt-4 border-top">
-        <div class="row mb-4">
+    <!-- Search Section -->
+    <section class="container my-5 pt-4">
+        <div class="row mb-4 align-items-end">
             <div class="col-lg-8">
                 <p class="text-uppercase text-muted fw-semibold small mb-1">— CURATED FOR STUDENTS</p>
-                <h2 class="fw-bold display-6">Find an opportunity that fits your direction.</h2>
+                <h2 class="fw-bold display-6 mb-0">Find an opportunity that fits your direction.</h2>
             </div>
         </div>
 
+        <!-- Quick Filters -->
+        <div class="d-flex flex-wrap gap-2 mb-4">
+            <span class="text-muted small align-self-center me-2">Popular:</span>
+            <a href="#" class="filter-chip">Development</a>
+            <a href="#" class="filter-chip">UI/UX Design</a>
+            <a href="#" class="filter-chip">Data Science</a>
+            <a href="#" class="filter-chip">Cloud Computing</a>
+        </div>
+
         <!-- Search Form -->
+        <form id="searchForm" class="row g-2 mb-5">
+            <div class="col-md-9">
+                <div class="input-group bg-white rounded-pill border shadow-sm">
+                    <span class="input-group-text bg-transparent border-0 ps-4 text-muted">
+                        <i class="bi bi-search"></i>
+                    </span>
+                    <input type="text" id="searchInput" class="form-control form-control-lg border-0 bg-transparent py-3 shadow-none" placeholder="Search role, company, or skill..." required>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <button type="submit" class="btn btn-dark btn-lg w-100 rounded-pill py-3 fw-semibold shadow-sm" style="background-color: #0f172a;">
+                    Search
+                </button>
+            </div>
+        </form>
+
+        <!-- Dynamic Results Container -->
+        <div id="resultsContainer" class="row g-4"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5 mt-5">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+            <div>
+                <h5 class="fw-bold mb-1 d-flex align-items-center gap-2">
+                    <i class="bi bi-lightning-charge-fill text-warning"></i> SkillBridge
+                </h5>
+                <p class="text-muted small mb-0">Discover Opportunities. Understand Skills.</p>
+            </div>
+            <div class="d-flex gap-4 text-muted small">
+                <a href="index.html" class="text-white-50 text-decoration-none">Home</a>
+                <a href="opportunities.html" class="text-white-50 text-decoration-none">Opportunities</a>
+                <a href="skills-guide.html" class="text-white-50 text-decoration-none">Skills Guide</a>
+                <a href="about.html" class="text-white-50 text-decoration-none">About</a>
+                <a href="contact.html" class="text-white-50 text-decoration-none">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Files -->
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
