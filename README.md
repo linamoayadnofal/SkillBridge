@@ -125,12 +125,6 @@ Developed as part of a university Web Technology project to demonstrate the prac
 
 **SkillBridge — Discover Opportunities. Understand Skills.**
 
-<img width="930" height="413" alt="image" src="https://github.com/user-attachments/assets/94ac9771-7bd2-4b11-8991-9bf0b137b0e0" />
-<img width="887" height="439" alt="image" src="https://github.com/user-attachments/assets/ad270277-8533-41f0-9d73-e814c0ee917b" />
-<img width="862" height="440" alt="image" src="https://github.com/user-attachments/assets/730fc387-5e0d-4c55-bf0d-7a501b09af5c" />
-<img width="623" height="394" alt="image" src="https://github.com/user-attachments/assets/18f53f96-e084-48ce-8296-9b1b7ec9a138" />
-<img width="764" height="375" alt="image" src="https://github.com/user-attachments/assets/ff9b4d11-975e-4d9e-aa41-22f73023606b" />
-
 
 
 
