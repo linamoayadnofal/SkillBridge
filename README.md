@@ -50,32 +50,9 @@ SkillBridge addresses this challenge by organizing training opportunities and ca
 - **XML** — Structuring career-related skills data.
 
 ## 📂 Project Structure
+<img width="210" height="313" alt="image" src="https://github.com/user-attachments/assets/29ea19ab-03d7-4df1-b437-b9493cc4d184" />
 
-```text
-SkillBridge/
-│
-├── index.html
-├── opportunities.html
-├── skills.html
-├── about.html
-│
-├── css/
-│   └── style.css
-│
-├── js/
-│   ├── home.js
-│   ├── opportunities.js
-│   └── skills.js
-│
-├── data/
-│   ├── opportunities.json
-│   └── skills.xml
-│
-├── assets/
-│   ├── images/
-│   └── icons/
-│
-└── README.md
+
 ```
 
 *Note: This structure is a suggested organization. Update the file and folder names to match the actual project implementation.*
